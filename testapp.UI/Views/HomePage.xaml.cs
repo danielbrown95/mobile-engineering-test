@@ -24,6 +24,8 @@ namespace testapp.UI.Pages
                 navigationPage.BarTextColor = Color.White;
                 navigationPage.BarBackgroundColor = (Color)Application.Current.Resources["Plum"];
                 
+                // Objective 2 - Extend Home screen to include option to search for properties to let
+                
                 var Picker = new Picker { Title = "For Sale or To Let", TitleColor = Color.Purple };
                 picker.Items.Add("For Sale");
                 picker.Items.Add("To Let");
