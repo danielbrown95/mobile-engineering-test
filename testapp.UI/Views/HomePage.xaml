@@ -59,6 +59,8 @@
                             Text="Search"
                             VerticalOptions="End" />
                   
+                  // Objective 2 - Extend Home screen to include option to search for properties to let
+                  
                   <Picker Title="For Sale or To Let"
                       TitleColor="Purple">
                       <Picker.Items>
