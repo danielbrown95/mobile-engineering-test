@@ -23,6 +23,24 @@ namespace testapp.UI.Pages
             {
                 navigationPage.BarTextColor = Color.White;
                 navigationPage.BarBackgroundColor = (Color)Application.Current.Resources["Plum"];
+                
+                var Picker = new Picker { Title = "For Sale or To Let", TitleColor = Color.Purple };
+                picker.Items.Add("For Sale");
+                picker.Items.Add("To Let");
+                
+                var propertystatusLabel = new Label();
+                propertystatusLabel.SetBinding(Label.TextProperty, new Binding("SelectedItem", source: picker));
+
+                void OnPickerSelectedIndexChanged(object sender, System.EventArgs e)
+                {
+                    var picker = (Picker)sender;
+                    int selectedIndex = picker.SelectedIndex;
+
+                    if (selectedIndex != -1)
+                    {
+                        propertystatusLabel.Text = (string)picker.ItemsSource[selectedIndex];
+                    }
+                }
             }
         }
     }
