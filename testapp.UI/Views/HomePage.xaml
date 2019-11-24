@@ -67,6 +67,8 @@
                       <Picker.Items>
                   <Picker>
                     
+                  <Label Text="{Binding Source={x:Reference picker}, Path=SelectionItem}" />
+                    
                 </StackLayout>                
             </StackLayout>
             
