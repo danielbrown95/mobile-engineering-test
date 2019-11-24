@@ -58,6 +58,15 @@
                             Style="{StaticResource PrimaryButton}"
                             Text="Search"
                             VerticalOptions="End" />
+                  
+                  <Picker Title="For Sale or To Let"
+                      TitleColor="Purple">
+                      <Picker.Items>
+                        <x:String>To Sell</x:String>
+                        <x:String>To Let</x:String>
+                      <Picker.Items>
+                  <Picker>
+                    
                 </StackLayout>                
             </StackLayout>
             
