@@ -47,6 +47,7 @@
                 <Button Command="{Binding VisitWebsiteCommand}"
                         HorizontalOptions="FillAndExpand"
                         Style="{StaticResource DarkPurpleOutlinedButton}"
+                        Clicked="OnButtonClicked"
                         Text="Visit Purplebricks website" />                
             </StackLayout>
         </StackLayout>
