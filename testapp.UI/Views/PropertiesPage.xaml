@@ -96,9 +96,7 @@
                                             <Grid.ColumnDefinitions>
                                                 <ColumnDefinition Width="*" />
                                             </Grid.ColumnDefinitions>   
-                                            
-                                          // Objective 3 - Extend card view of the property search result to include property address
-                                          
+                                                                                                                               
                                            <StackLayout Grid.Row="0"
                                                          Spacing="0"
                                                          Margin="0"
