@@ -44,6 +44,13 @@ namespace testapp.Core.Services.Search
 
         [JsonIgnore]
         public string LargeImage => string.IsNullOrWhiteSpace(Image?.MediumImage) ? string.Empty : Image.MediumImage.Replace(@"/medium/", @"/large/");
+        
+        // Objective 3 - Extend card view of the property search result to incude property address
+        [JsonIgnore]
+        public string FormatAddress => Address;
+        
+        [JsonIgnore]
+        public string FormatPosrcode => Postcode;
     }
 
     public class PropertySearchImage
