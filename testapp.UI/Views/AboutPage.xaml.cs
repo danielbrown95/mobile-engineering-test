@@ -13,5 +13,12 @@ namespace testapp.UI.Views
         {
             InitializeComponent();
         }
+        
+        // Objective 1 - Allow visiting Purplebricks website from About Screen //
+        
+        private void OnButtonClicked(object sender, System.EventArgs args)
+        {
+            Xamarin.Forms.Device.OpenUri(new System.Uri("http://www.purplebricks.com"));
+        }
     }
 }
